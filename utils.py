@@ -1,4 +1,5 @@
 # contenant les fonctions pour l'affichage et la gestion des données
+# la connection avec mongodb 
 # on recuper la liste des personnage 
 # la liste des monstres 
 # la liste des scores 
