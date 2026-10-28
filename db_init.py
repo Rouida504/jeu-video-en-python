@@ -1,4 +1,5 @@
 # insértion des personnages et monstres dans MongoDB
+from utils import personnages_collection, monstres_collection, scores_collection
 
 # on rajoute la liste de 10 personnes avec des caractéristiques prédéfinies (attaque, défense, points de vie)
 personnages =[
@@ -39,4 +40,19 @@ scores = [
     {"joueur": "rme", "score": 54},
     {"joueur": "rme", "score": 51},
 ]
-# Enregistre ces données dans les collections correspondantes
+# on verifier si les personnage /les monstres n'existe pas deja pour eviter de faire les doublons 
+personnages_inscrits = ["personnages_collection"]
+if personnages_collection in personnages_inscrits:
+    print("existe deja")
+else:
+    print("n'existe pas ")
+
+# monstres
+monstres_inscrits = ["monstres_collection"]
+if monstres_collection in monstres_inscrits:
+    print("existe deja ")
+else:
+    print(" n'existe pas ")
+
+# enregistre ces données dans les collections correspondantes
+print("personnages ,monstres sont pret ")
